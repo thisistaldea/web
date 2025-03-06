@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta http-equiv="ScreenOrientation" content="autoRotate:disabled"><!-- Favicon --><link rel="icon" href="/default-favicon.ico"><!-- SEO Meta Tags --><title>Taldea Photo App</title><link rel="canonical" href="https://taldea.com/"><meta name="description" content="Discover how Taldea makes photo sharing between contacts simple. Our mission is to help you share moments quickly, easily, and securely."><meta name="keywords" content="Taldea, photo sharing, image exchange, photo management, photo platform, Taldea app, share moments, Taldea mission"><meta name="author" content="Taldea"><meta name="robots" content="index, follow"><!-- Open Graph Tags --><meta property="og:title" content="Taldea Photo App"><meta property="og:description" content="Discover how Taldea makes photo sharing between contacts simple. Our mission is to help you share moments quickly, easily, and securely."><meta property="og:site_name" content="Taldea"><!-- Amplitude Tag --><script defer src="https://cdn.amplitude.com/libs/amplitude-8.17.0-min.gz.js"></script> <script>
+  window.addEventListener("load", () => {
+    console.log("[Astro] Comprobando si window.amplitude está disponible...", window.amplitude);
+    if (window.amplitude) {
+      amplitude.getInstance().init("be251e6372fd917224df04b18a7b4f30");
+      console.log("Amplitude inicializado correctamente");
+    } else {
+      console.error("Amplitude no se ha cargado. Puede estar bloqueado o no haberse descargado aún.");
+    }
+  });
+</script><link rel="stylesheet" href="/_astro/changelog.DpAfYYmM.css"></head><body>  <main> <div class="inset-0 absolute mt-2 mx-auto px-4 py-4"> <img src="../img/taldea-white-icon.svg" class="w-24 h-auto max-w-xs md:max-w-lg" alt="Taldea Icon"> </div> <div class="relative w-full h-screen touch-none"> <div class="absolute inset-0 h-full w-full object-cover -z-10 bg-black opacity-90"></div> <img src="https://picsum.photos/id/91/2000/3000?grayscale&blur=8" alt="" class="absolute -z-20 h-full w-full object-cover"> <div class="max-w-4xl mx-auto pt-40 px-6 sm:px-4 lg:px-8 -z-10"> <span class="font-medium tracking-normal text-white text-3xl lg:text-5xl block mb-6">Are your photos on other people’s phones galleries?</span> <span class="font-thing tracking-normal leading-10 text-gray-500 text-3xl lg:text-5xl block">Taldea gets them for you—no need to ask.</span> </div> <div class="max-w-4xl mx-auto pt-16 px-6 lg:px-8 flex items-center space-x-8"> <a href="https://play.google.com/store/apps/details?id=com.taldea.mobile"> <img src="/img/google-play-white-icon.svg" class="w-full h-auto max-w-xs sm:max-w-md md:max-w-lg" alt="Google Play Icon"> </a> <a href="https://apps.apple.com/es/app/taldea/id1671516285"> <img src="/img/apple-store-white-icon.svg" class="w-full h-auto max-w-xs sm:max-w-md md:max-w-lg" alt="Apple Store Icon"> </a> </div> </div> <div class="absolute bottom-0 w-full"> <div class="mx-auto space-x-8 mb-8 text-gray-200 text-center"> <a href="/mision">Our Mision</a> <a href="/changelog">Changelog</a> <a href="/contact">Contact</a> </div> </div> </main> <script>
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest("a");
+      if (link) {
+        amplitude.getInstance().logEvent("LinkClicked", {
+          text: link.textContent.trim(),
+          url: link.href
+        });
+      }
+    });
+  </script>  </body></html>
