@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2025-11-26",
+    "dateLabel": "Nov 26, 2025",
+    "tag": "New rules drop",
+    "title": "End date, No ghosting & daily limits",
+    "body": "Groups can now have a fixed end day, auto-lock members who don't post for 7 days, and cap how many moments each member drops every 24h. Plus a new idea on the table: groups you can stick on paper with a QR."
+  },
+  {
+    "date": "2025-11-25",
+    "dateLabel": "Nov 25, 2025",
+    "tag": "Store glow-up",
+    "title": "Taldea dresses up for the App Stores",
+    "body": "Screens, copy and creatives are ready for the App Store and Google Play. No fake UI shots – just blurred chaos, FOMO quotes and tiny circles trying to explain what’s going on."
+  },
+  {
+    "date": "2025-11-17",
+    "dateLabel": "Nov 17, 2025",
+    "tag": "Code starts shipping",
+    "title": "First Taldea build gets written",
+    "body": "Design stops being theory and turns into code. Groups, moments and the 24h pulse start living in a real app instead of a Figma prototype."
+  },
+  {
+    "date": "2025-11-10",
+    "dateLabel": "Nov 10, 2025",
+    "tag": "Face reveal",
+    "title": "Taldea finds its first real design",
+    "body": "The app gets a proper look in Figma: black screens, yellow dots and a carousel of shapes instead of boring tabs. By Friday, Taldea already feels like a thing."
+  },
+  {
+    "date": "2025-11-04",
+    "dateLabel": "Nov 4, 2025",
+    "tag": "Name drop",
+    "title": "taldea.app becomes real",
+    "body": "The taldea.app domain is locked in. The idea moves from a random note to a place on the internet where groups might one day panic about disappearing photos."
+  }
+]
