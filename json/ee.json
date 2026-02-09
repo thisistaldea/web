@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-06-01",
+    "dateLabel": "June 1, 2026",
+    "tag": "Pride Month 🌈",
+    "title": "Love is Pride",
+    "body": "Taldea is for everyone. This month, we celebrate diversity by bringing a bit more color to your groups. Because moments are better when you can be your true, colorful self. Happy Pride!",
+    "style": {
+      "titleColor": "#E40303",
+      "underlineColor": "linear-gradient(90deg, #E40303 0%, #FF8C00 20%, #FFED00 40%, #008026 60%, #004DFF 80%, #750787 100%)",
+      "tagColor": "#E40303"
+    }
+  }
+]
