@@ -1,4 +1,41 @@
-<!DOCTYPE html><!-- 🔥 SPA Fallback for /join/<inviteId> paths --><script type="module">const o=window.location.pathname;o.startsWith("/join/")&&window.location.replace("/join/");</script> <html lang="en" class="bg-[#050505] text-[#f5f5f5] antialiased"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Not found — taldea</title><meta name="description" content="This page already disappeared."><meta property="og:url" content="https://taldea.app/404/"><!-- OpenGraph --><meta property="og:title" content="Not found — taldea"><meta property="og:description" content="This page already disappeared."><meta property="og:type" content="website"><meta property="og:site_name" content="taldea"><!-- Twitter --><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Not found — taldea"><meta name="twitter:description" content="This page already disappeared."><!-- Favicons --><!-- Favicon for most browsers --><link rel="icon" type="image/x-icon" href="/favicon/favicon.ico"><!-- PNG Favicons --><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><!-- Apple Touch Icon --><link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png"><!-- Android Chrome Icons --><link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png"><!-- Web Manifest --><link rel="manifest" href="/favicon/site.webmanifest"><!-- Optional: Define theme colors for PWA and browser UI --><meta name="theme-color" content="#ffffff"><!-- Umami Stats --><script defer src="https://cloud.umami.is/script.js" data-website-id="d46c713c-42ee-4537-a548-651748cc69a9"></script><link rel="stylesheet" href="/_astro/about.CYVv06pj.css">
+<!DOCTYPE html><!-- SPA fallback + tracking --><script>
+  ;(() => {
+    function track(eventName, payload = {}) {
+      try {
+        if (window.umami && typeof window.umami.track === "function") {
+          window.umami.track(eventName, payload);
+        }
+      } catch (_) {}
+    }
+
+    const path = window.location.pathname || "";
+    const referrer = document.referrer || "";
+
+    // Caso especial: /join/<inviteId> => redirigir a /join/
+    if (path.startsWith("/join/") && path !== "/join/") {
+      const inviteId = path.slice("/join/".length).split("/")[0] || "";
+
+      track("not_found_join_fallback_redirect", {
+        page: "404",
+        from_path: path,
+        to_path: "/join/",
+        has_invite_id: Boolean(inviteId),
+        invite_id_length: inviteId.length,
+        referrer
+      });
+
+      window.location.replace("/join/");
+      return;
+    }
+
+    // 404 normal
+    track("not_found_view", {
+      page: "404",
+      path,
+      referrer
+    });
+  })();
+</script> <html lang="en" class="bg-[#050505] text-[#f5f5f5] antialiased"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Not found — taldea</title><meta name="description" content="This page already disappeared."><meta property="og:url" content="https://taldea.app/404/"><!-- OpenGraph --><meta property="og:title" content="Not found — taldea"><meta property="og:description" content="This page already disappeared."><meta property="og:type" content="website"><meta property="og:site_name" content="taldea"><!-- Twitter --><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Not found — taldea"><meta name="twitter:description" content="This page already disappeared."><!-- Favicons --><!-- Favicon for most browsers --><link rel="icon" type="image/x-icon" href="/favicon/favicon.ico"><!-- PNG Favicons --><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><!-- Apple Touch Icon --><link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png"><!-- Android Chrome Icons --><link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png"><!-- Web Manifest --><link rel="manifest" href="/favicon/site.webmanifest"><!-- Optional: Define theme colors for PWA and browser UI --><meta name="theme-color" content="#ffffff"><!-- Umami Stats --><script defer src="https://cloud.umami.is/script.js" data-website-id="d46c713c-42ee-4537-a548-651748cc69a9"></script><link rel="stylesheet" href="/_astro/about.BJpA84jW.css">
 <style>@keyframes fadeIn{0%{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}.animate-fadeIn[data-astro-cid-zetdm5md]{animation:fadeIn 1.8s ease forwards}
 </style></head><body class="p-0 m-0 font-sans"> <div class="fixed top-0 left-0 right-0 z-20 bg-[#050505] shadow-[0_1px_0_rgba(0,0,0,0.6)]"> <header class="w-full
       max-w-[760px]
@@ -30,4 +67,24 @@ Menu
 You missed it.
 </h1> <p class="mt-4 text-[#b3b3b3] text-sm sm:text-base tracking-wide" data-astro-cid-zetdm5md>
 Whatever was here vanished — like everything else in <span class="text-[#FDC500]" data-astro-cid-zetdm5md>taldea</span>.
-</p> <p class="mt-2 text-[#777] text-xs italic" data-astro-cid-zetdm5md>(404)</p> </div>  </main>  <!-- ⭐ Aquí llegan los scripts -->  </body></html>
+</p> <p class="mt-2 text-[#777] text-xs italic" data-astro-cid-zetdm5md>(404)</p> <p class="mt-6" data-astro-cid-zetdm5md> <a id="not-found-go-home" href="/" class="inline-block px-6 py-2.5 rounded-full border border-white/20 text-[0.9rem] font-medium bg-black/40 backdrop-blur-md hover:border-[#ffd74a] transition" data-astro-cid-zetdm5md>
+Go back home
+</a> </p> </div>  </main> <script>
+    ;(() => {
+      function track(eventName, payload = {}) {
+        try {
+          if (window.umami && typeof window.umami.track === "function") {
+            window.umami.track(eventName, payload);
+          }
+        } catch (_) {}
+      }
+
+      const homeLink = document.getElementById("not-found-go-home");
+      homeLink?.addEventListener("click", () => {
+        track("not_found_click_go_home", {
+          page: "404",
+          path: window.location.pathname || ""
+        });
+      });
+    })();
+  </script>  <!-- ⭐ Aquí llegan los scripts -->  </body></html>
