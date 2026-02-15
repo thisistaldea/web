@@ -48,7 +48,6 @@ Tap to see another drop
       const underlineEl = document.getElementById("drop-underline");
       const nextBtn = document.getElementById("drop-next");
 
-      // Guard clause por seguridad
       if (!containerEl || !metaEl || !titleEl || !bodyEl || !underlineEl || !nextBtn) return;
       if (!Array.isArray(drops) || drops.length === 0) {
         nextBtn.setAttribute("disabled", "true");
@@ -59,46 +58,47 @@ Tap to see another drop
       let index = 0;
       let cycleCompletedSent = false;
 
-      function track(eventName, payload = {}) {
-        // Umami compatible: evita errores si el script aún no está listo
+      function track(eventName, payload) {
         try {
           if (window.umami && typeof window.umami.track === "function") {
-            window.umami.track(eventName, payload);
+            window.umami.track(eventName, payload || {});
           }
         } catch (_) {}
       }
 
       function getMetaText(drop) {
-        return `${drop.dateLabel || drop.date || ""}${drop.tag ? ` · ${drop.tag}` : ""}`;
+        return (drop.dateLabel || drop.date || "") + (drop.tag ? " · " + drop.tag : "");
+      }
+
+      function getDropId(drop, i) {
+        return (drop && drop.id) ? drop.id : ("drop_" + i);
       }
 
       function updateContent(i) {
         const drop = drops[i] || {};
         const style = drop.style || {};
 
-        // Reset de estilos por defecto
         titleEl.style.color = style.titleColor || "#0f172a";
         metaEl.style.color = style.tagColor || "";
         underlineEl.style.background = style.underlineColor || "#F5B700";
 
-        // Contenido
         metaEl.textContent = getMetaText(drop);
         titleEl.textContent = drop.title || "";
         bodyEl.textContent = drop.body || "";
 
-        // Texto botón
         if (drops.length > 1) {
           const rem = drops.length - (i + 1);
           nextBtn.textContent = rem > 0
-            ? `Tap to see another drop (${rem} left)`
+            ? "Tap to see another drop (" + rem + " left)"
             : "Back to first drop";
         } else {
           nextBtn.textContent = "Only one drop available";
           nextBtn.setAttribute("disabled", "true");
         }
 
-        // Evento de view del drop
         track("drops_view", {
+          page: "drops",
+          drop_id: getDropId(drop, i),
           index: i,
           total: drops.length,
           title: drop.title || "",
@@ -110,19 +110,19 @@ Tap to see another drop
       updateContent(index);
 
       nextBtn.addEventListener("click", () => {
-        // Si solo hay 1, no hacemos nada
         if (drops.length <= 1) return;
 
         const fromIndex = index;
         const toIndex = (index + 1) % drops.length;
         const nextDrop = drops[toIndex] || {};
 
-        // Track click ANTES del cambio visual
         track("drops_next_click", {
+          page: "drops",
           from_index: fromIndex,
           to_index: toIndex,
           total: drops.length,
           remaining_before_wrap: drops.length - (fromIndex + 1),
+          next_drop_id: getDropId(nextDrop, toIndex),
           next_title: nextDrop.title || "",
           next_tag: nextDrop.tag || ""
         });
@@ -134,11 +134,10 @@ Tap to see another drop
           updateContent(index);
           containerEl.classList.remove("fade-out");
 
-          // Track de "completó la vuelta"
-          // Se dispara una vez cuando pasas del último al primero
           if (!cycleCompletedSent && fromIndex === drops.length - 1 && index === 0) {
             cycleCompletedSent = true;
             track("drops_cycle_completed", {
+              page: "drops",
               total: drops.length
             });
           }

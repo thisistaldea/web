@@ -1,5 +1,6 @@
 [
   {
+    "id": "playstore_closed_testing",
     "date": "2026-01-30",
     "dateLabel": "Jan 30, 2026",
     "tag": "Google Play milestone",
@@ -7,6 +8,7 @@
     "body": "Google's 12-tester hurdle is officially on. The Android build is out in the wild for a small circle of victims: Iñigo, Leyre, Loreto, Jorge, Ekaitz, Jon, Gorka, Carlos, Asier, Luis, Bertol and Andoni. They are the first ones testing if groups actually expire and if the app survives the real world."
   },
   {
+    "id": "store_assets_ready",
     "date": "2025-11-25",
     "dateLabel": "Nov 25, 2025",
     "tag": "Store glow-up",
@@ -14,6 +16,7 @@
     "body": "Screens, copy and creatives are ready for the App Store and Google Play. No fake UI shots – just blurred chaos, FOMO quotes and tiny circles trying to explain what's going on."
   },
   {
+    "id": "first_build_written",
     "date": "2025-11-17",
     "dateLabel": "Nov 17, 2025",
     "tag": "Code starts shipping",
@@ -21,6 +24,7 @@
     "body": "Design stops being theory and turns into code. Groups, moments and the 24h pulse start living in a real app instead of a Figma prototype."
   },
   {
+    "id": "first_design_direction",
     "date": "2025-11-10",
     "dateLabel": "Nov 10, 2025",
     "tag": "Face reveal",
@@ -28,6 +32,7 @@
     "body": "The app gets a proper look in Figma: black screens, yellow dots and a carousel of shapes instead of boring tabs. By Friday, Taldea already feels like a thing."
   },
   {
+    "id": "domain_taldea_app",
     "date": "2025-11-04",
     "dateLabel": "Nov 4, 2025",
     "tag": "Name drop",
