@@ -1,5 +1,13 @@
 [
   {
+    "id": "store_review_submitted",
+    "date": "2026-02-22",
+    "dateLabel": "Feb 22, 2026",
+    "tag": "Stores milestone",
+    "title": "Apps sent to review (Apple + Google)",
+    "body": "Feb 22: we hit the big red button. Taldea was submitted to both Apple App Store review and Google Play review. Now it’s the calm-before-the-verdict phase: hoping the reviewers don’t trip on the weird parts (ephemeral groups, private links, zero social features) and the build survives the paperwork."
+  },
+  {
     "id": "playstore_closed_testing",
     "date": "2026-01-30",
     "dateLabel": "Jan 30, 2026",
