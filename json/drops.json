@@ -1,5 +1,13 @@
 [
   {
+    "id": "production_launch_apps_live",
+    "date": "2026-04-20",
+    "dateLabel": "Apr 20, 2026",
+    "tag": "Launch day",
+    "title": "Taldea is live",
+    "body": "The production switch is on. Taldea is now out for real, with the Android app on Google Play and the iPhone app on the App Store. No more review limbo, no more test-only whispers: just links, groups, 24-hour moments and the tiny pressure of seeing if the real world gets it."
+  },
+  {
     "id": "store_review_submitted",
     "date": "2026-02-22",
     "dateLabel": "Feb 22, 2026",
