@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /found/flat7a
+Allow: /
+
+Sitemap: https://taldea.app/sitemap-index.xml
