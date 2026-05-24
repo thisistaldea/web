@@ -1,5 +1,13 @@
 [
   {
+    "id": "version_5_1_0_production",
+    "date": "2026-05-24",
+    "dateLabel": "May 24, 2026",
+    "tag": "Version 5.1.0",
+    "title": "Taldea gets sharper",
+    "body": "Version 5.1.0 is live in production. Sharing gets cleaner, group screens feel tighter, camera controls get more useful and the app is calmer about telling you what just happened. Same disappearing moments, less friction around them."
+  },
+  {
     "id": "production_launch_apps_live",
     "date": "2026-04-20",
     "dateLabel": "Apr 20, 2026",
