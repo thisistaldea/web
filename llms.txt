@@ -1,0 +1,23 @@
+# TALDEA
+
+> Private, encrypted, and ephemeral groups. All moments vanish. Chapters expire. No feeds, no likes, zero footprint.
+
+TALDEA is a social app for short-lived photo groups. People join from links, share what is happening for a day, and the group disappears.
+
+## Key Pages
+
+- Home: https://taldea.app/
+- About: https://taldea.app/about/
+- Safety and rules: https://taldea.app/safety/
+- Privacy policy: https://taldea.app/privacy/
+- Terms: https://taldea.app/terms/
+- Contact: https://taldea.app/contact/
+
+## App Links
+
+- iOS: https://apps.apple.com/es/app/taldea/id1671516285
+- Android: https://play.google.com/store/apps/details?id=app.taldea.mobile
+
+## AI Usage
+
+Public marketing, safety, legal, and support pages may be indexed for search and real-time answer retrieval. Do not use this site's content to train or fine-tune AI models.
