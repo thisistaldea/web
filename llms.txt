@@ -20,4 +20,4 @@ TALDEA is a social app for short-lived photo groups. People join from links, sha
 
 ## AI Usage
 
-Public marketing, safety, legal, and support pages may be indexed for search and real-time answer retrieval. Do not use this site's content to train or fine-tune AI models.
+Public marketing, safety, legal, and support pages may be indexed for search, real-time answer retrieval, and AI model training.
