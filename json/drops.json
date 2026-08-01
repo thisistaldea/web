@@ -1,5 +1,13 @@
 [
   {
+    "id": "version_5_6_0",
+    "date": "2026-07-24",
+    "dateLabel": "Jul 24, 2026",
+    "tag": "Version 5.6.0",
+    "title": "Echos are here",
+    "body": "Version 5.6.0 brings short-lived conversations to active Moments, safer reporting and a steadier experience when capturing, uploading and returning to a drop."
+  },
+  {
     "id": "version_5_1_0_production",
     "date": "2026-05-24",
     "dateLabel": "May 24, 2026",
