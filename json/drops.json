@@ -1,5 +1,13 @@
 [
   {
+    "id": "aug_3_2026_small_updates",
+    "date": "2026-08-03",
+    "dateLabel": "Aug 3, 2026",
+    "tag": "Safety update",
+    "title": "Age minimum lowered to 13+",
+    "body": "We lowered the minimum age to 13+ because we consider the product safe for 13+ users, with stronger defaults for group membership, reporting, and disappearing content controls."
+  },
+  {
     "id": "version_5_6_0",
     "date": "2026-07-24",
     "dateLabel": "Jul 24, 2026",
