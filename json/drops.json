@@ -1,5 +1,13 @@
 [
   {
+    "id": "version_5_6_5",
+    "date": "2026-08-08",
+    "dateLabel": "Aug 8, 2026",
+    "tag": "Version 5.6.5",
+    "title": "More places, same moment.",
+    "body": "Drop a new Moment in more than one group, or ReDrop an existing one to another group. The original timer always stays put."
+  },
+  {
     "id": "aug_3_2026_small_updates",
     "date": "2026-08-03",
     "dateLabel": "Aug 3, 2026",
